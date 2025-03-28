@@ -87,23 +87,6 @@ function getPossibleMoves(conf,key){
     const peice = conf[key]
     if(!peice||peice==="") return []
     const [p,c] = peice.split('-')
-    
-    //white pawn can move forward one step, can move two steps if in same initial position, can capture to right forward or left forward - or imposant
-    //black pawn has same moves, except it is in opposite direction
-    
-    //rock can move left,right,up,down unlimited until blocked
-    //bishop can move diagnoal unlimited until blocked
-    //knight can move L shape (8 possible moves at most), cannot be blocked
-    //queen can move both like bishop and rock until blocked
-    //king can move all direction, except to a position where it is going to be attacked, and can only make one move only
-    //king can castle with rock eighter queen side or king side given that king is not at check, and after casteling cannot move 
-    //to a position and be at check, there should be nothing between king and rock
-
-    //all peices cannot make a move if the move will result in making king attacked
-    //game ends when a player cannot make any move
-    //white is victorious if black king is checkmated
-    //black is victorious if white king is checkmated
-    //game is draw when in stallmate: king is not check and cannot make a move
 
     if(p==="r"){//rock
 
