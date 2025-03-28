@@ -18,6 +18,7 @@ to a position and be at check, there should be nothing between king and rock
 cell positions are marked a1,a2,..,h8 where first character is the column name (file) and the second digit is the row number
 chess board is composed of 64 cells:
 
+|    |    |    |    |    |    |    |    |
 |----|----|----|----|----|----|----|----|
 | a8 | b8 | c8 | d8 | e8 | f8 | g8 | h8 |
 | a7 | b7 | c7 | d7 | e7 | f7 | g7 | h7 |
