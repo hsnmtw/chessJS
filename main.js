@@ -4,7 +4,7 @@ let dark = 0
 for(let i=0;i<64;i++){
     const cell = document.createElement('div')
     cell.className="cell"
-    if(i%8 === 0) dark = dark === 1 ? 0 : 1
+    if(i%8 === 0) dark ^= 1
     if((i+dark)%2 === 0) cell.className += " cell-dark"
     board.append(cell)
 }
