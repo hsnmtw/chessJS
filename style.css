@@ -1,0 +1,39 @@
+:root{
+    --brdr-clr: rgb(125, 121, 121);
+    --light: bisque;
+    --dark: rgb(226, 149, 14)
+}
+body{
+    display: grid;
+    /* min-height: 90vh; */
+}
+.board {
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 0;
+    border-right: 1px solid var(--brdr-clr);
+    border-bottom: 1px solid var(--brdr-clr);
+    margin-inline: auto;
+    /* width: 75%; */
+}
+
+.cell {
+    border-top: 1px solid var(--brdr-clr);
+    border-left: 1px solid var(--brdr-clr);
+    background-color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px !important;
+    aspect-ratio: 1/1;
+}
+
+.cell img {
+    aspect-ratio: 1/1;
+    width: 70%;
+}
+
+.cell-dark {
+    background-color: var(--dark);
+}
